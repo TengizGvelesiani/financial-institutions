@@ -14,6 +14,7 @@ public class FinancialInstitution {
     private LocalDateTime createdAt;
     private List<Branch> branches;
     private List<Employee> employees;
+    private List<Customer> customers;
 
     public Long getId() {
         return id;
@@ -77,5 +78,13 @@ public class FinancialInstitution {
 
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
+    }
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(List<Customer> customers) {
+        this.customers = customers;
     }
 }
