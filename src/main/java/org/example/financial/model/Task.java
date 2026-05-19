@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Task {
     private Long id;
+    private Long employeeId;
     private String title;
     private LocalDate dueDate;
     private boolean completed;
@@ -14,6 +15,14 @@ public class Task {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getTitle() {

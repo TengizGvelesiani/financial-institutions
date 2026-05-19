@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 public class Passport {
     private Long id;
+    private Long employeeId;
+    private Long customerId;
     private String passportNumber;
     private LocalDate issueDate;
     private LocalDate expiryDate;
@@ -14,6 +16,22 @@ public class Passport {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Long employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
     }
 
     public String getPassportNumber() {

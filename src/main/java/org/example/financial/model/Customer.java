@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Customer {
     private Long id;
+    private Long financialInstitutionId;
     private String fullName;
     private LocalDate birthDate;
     private LocalDateTime registeredAt;
@@ -19,6 +20,14 @@ public class Customer {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getFinancialInstitutionId() {
+        return financialInstitutionId;
+    }
+
+    public void setFinancialInstitutionId(Long financialInstitutionId) {
+        this.financialInstitutionId = financialInstitutionId;
     }
 
     public String getFullName() {

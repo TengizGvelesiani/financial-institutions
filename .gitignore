@@ -34,3 +34,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Application config (credentials) ###
+src/main/resources/config.properties

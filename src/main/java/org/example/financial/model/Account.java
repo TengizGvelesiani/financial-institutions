@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Account {
     private Long id;
+    private Long customerId;
     private String accountNumber;
     private BigDecimal balance;
     private List<Transaction> transactions;
@@ -17,6 +18,14 @@ public class Account {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
     }
 
     public String getAccountNumber() {

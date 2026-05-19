@@ -5,6 +5,7 @@ import java.time.LocalDate;
 
 public class Loan {
     private Long id;
+    private Long accountId;
     private BigDecimal principal;
     private LocalDate startDate;
     private boolean active;
@@ -15,6 +16,14 @@ public class Loan {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(Long accountId) {
+        this.accountId = accountId;
     }
 
     public BigDecimal getPrincipal() {

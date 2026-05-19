@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 public class Card {
     private Long id;
+    private Long accountId;
     private String cardNumber;
     private LocalDateTime issuedAt;
     private boolean blocked;
@@ -14,6 +15,14 @@ public class Card {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(Long accountId) {
+        this.accountId = accountId;
     }
 
     public String getCardNumber() {

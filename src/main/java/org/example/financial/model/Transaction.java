@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 public class Transaction {
     private Long id;
+    private Long accountId;
     private BigDecimal amount;
     private LocalDateTime transactionTime;
     private String description;
@@ -15,6 +16,14 @@ public class Transaction {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getAccountId() {
+        return accountId;
+    }
+
+    public void setAccountId(Long accountId) {
+        this.accountId = accountId;
     }
 
     public BigDecimal getAmount() {

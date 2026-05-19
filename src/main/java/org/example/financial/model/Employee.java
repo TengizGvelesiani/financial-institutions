@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Employee {
     private Long id;
+    private Long financialInstitutionId;
     private String fullName;
     private LocalDate hireDate;
     private BigDecimal salary;
@@ -18,6 +19,14 @@ public class Employee {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getFinancialInstitutionId() {
+        return financialInstitutionId;
+    }
+
+    public void setFinancialInstitutionId(Long financialInstitutionId) {
+        this.financialInstitutionId = financialInstitutionId;
     }
 
     public String getFullName() {
