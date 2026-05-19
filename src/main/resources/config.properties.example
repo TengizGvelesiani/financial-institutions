@@ -1,0 +1,7 @@
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/financial_institutions?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+jdbc.username=root
+jdbc.password=your_password
+pool.maximumPoolSize=10
+pool.minimumIdle=2
+pool.connectionTimeout=30000
